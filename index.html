@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DevTools</title>
+    <link rel="stylesheet" href="./reveal/reveal.css" />
+    <link rel="stylesheet" href="./reveal/theme/league.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides slides-ayn">
+        <section>
+          <h1>DevTools</h1>
+          <div style="margin-top: 250px; display: flex; flex-direction: column; flex-grow: 1; align-items: flex-end">
+            <span>Айнур Шауэрман</span>
+            <span>Фронтенд разработчик в StormWall Labs</span>
+          </div>
+        </section>
+
+        <section>
+          <h2>Содержание:</h2>
+          <ol>
+            <li>Зачем нужен DevTools?</li>
+            <li>Как открыть/закрыть DevTools?</li>
+            <li>Настройка под себя</li>
+            <li>Вкладки:</li>
+            <ol>
+              <li>Element (Inpector/Инспектор)</li>
+              <li>Console (Консоль)</li>
+              <li>Source / Отладчик</li>
+              <li>Network / Сеть</li>
+              <li>Performance</li>
+              <li>Memory / Память</li>
+              <li>Application / Приложение</li>
+            </ol>
+          </ol>
+        </section>
+
+        <section style="text-align: left; top: 150px">
+          <h2>1. Зачем нужен DevTools?</h2>
+
+          <p
+            >DevTools - инструмент для отладки веб-приложении, которые используют разные
+            <a href="https://developer.mozilla.org/en-US/docs/Web/Reference/API">API</a>.</p
+          >
+        </section>
+
+        <section style="text-align: left">
+          <h2>2. Как открыть/закрыть DevTools?</h2>
+          <table>
+            <caption><h3>Cпособы открытия/закрытия DevTools</h3></caption>
+            <thead>
+              <tr>
+                <th>HotKeys</th>
+                <th>Инструмент</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>F12</td>
+                <td>Открывает и закрывает DevTools, по умолчанию открывается первая вкладка Инспектор</td>
+              </tr>
+              <tr>
+                <td>Shift + Ctrl + C</td>
+                <td
+                  >Активирует инструмент выбора элемента со страницы. Если DevTool закрыт, но откроет его и активирует
+                  инструмент выбора элемента со страницы.</td
+                >
+              </tr>
+              <tr>
+                <td>Shift + Ctrl + I</td>
+                <td>Открывает последнюю использованную вами вкладку.</td>
+              </tr>
+              <tr>
+                <td>Клик правой кнопкой мыши -> Посмотреть код</td>
+                <td>Открывает вкладку "Elemants/Инспектор"</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+        <section>
+          <section>
+            <h2>3. Настройки</h2>
+            <p>Окно настроек открывается по F1 или нажатием на иконку треоточия.</p>
+            <img src="./assets/imgs/settings.jpg" />
+          </section>
+          <section class="bg-img" style="background-image: url(./assets/imgs/settings_default.jpg)">
+            <p>Настройки по умолчанию.</p>
+          </section>
+          <section class="bg-img" style="background-image: url(./assets/imgs/placement.jpg)">
+            <p>Выбор расположения.</p>
+          </section>
+          <section class="bg-img" style="background-image: url(./assets/imgs/settings_preferences.jpg)">
+            <p>Мои обязательные пункты.</p>
+          </section>
+          <section class="bg-img" style="background-image: url(./assets/imgs/settings_devices.jpg)">
+            <p>Выбор устройств для отладки адаптивности.</p>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h2>4. Вкладки</h2>
+            <h3>4.1. Element (Inspector)</h3>
+            <p>Здесь мы смотрим/меняем разметку и стили</p>
+            <ul>
+              <li>Навигация по элементам в документе</li>
+              <li>Редактирование как HTML</li>
+              <li>Добавление/редактирование атрибутов</li>
+              <li>Styles: изменение, hover/focus</li>
+              <li>Результирующие стили (Computed)</li>
+            </ul>
+          </section>
+          <section>
+            <h3>4.2. Console / Консоль</h3>
+            <p>Чем я пользуюсь:</p>
+            <ul>
+              <li>Preserve log для сохранения логов между перезагрузками страницы при разработке</li>
+              <li>Логи из приложения</li>
+              <li>Проверка разных операции</li>
+            </ul>
+          </section>
+          <section class="bg-img" style="background-image: url(./assets/imgs/source.png)">
+            <h3>4.3. Source / Отладчик</h3>
+          </section>
+          <section class="bg-img" style="background-image: url(./assets/imgs/network.png)">
+            <h3>4.4. Network / Сеть</h3>
+          </section>
+          <section class="bg-img" style="background-image: url(./assets/imgs/application.png)">
+            <h3>4.5. Application / Приложение</h3>
+          </section>
+          <section class="bg-img" style="background-image: url(./assets/imgs/memory.png)">
+            <h3>4.6. Memory / Память</h3>
+          </section>
+        </section>
+        <section>
+          <h3 style="text-align: center;">Профессиональных успехов вам!</h2>
+        </section>
+      </div>
+    </div>
+    <script src="./reveal/reveal.js"></script>
+    <script src="./reveal/plugin/markdown/markdown.js"></script>
+    <script>
+      Reveal.initialize({ plugins: [RevealMarkdown], slideNumber: 'c/t', autoPlayMedia: true });
+    </script>
+  </body>
+</html>
